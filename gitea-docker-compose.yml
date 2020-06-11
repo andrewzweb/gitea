@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  gitea:
+    image: gitea/gitea
+    volumes:
+      - ./data:/data
+    ports:
+      - 2222:22
+      - 3000:3000
